@@ -15,8 +15,10 @@ class Student
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade FLOAT
-    )
-    SQL
+      )
+      SQL
+   DB[:conn].execute(sql)
+    
   end
 
   def save
